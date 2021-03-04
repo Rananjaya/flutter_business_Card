@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea( // safe area is used to get our widget to safearea only take the space to visibale to user
-          child: Column(
+          child: Row(
             // verticalDirection: VerticalDirection.up,
             //verticalDirection: VerticalDirection.down,
             // mainAxisAlignment: MainAxisAlignment.center,
@@ -34,25 +34,29 @@ class MyApp extends StatelessWidget {
                   //margin: EdgeInsets.all(20.0), // add marign for all top bottom left right to 20.0 pixels
                   // margin: EdgeInsets.symmetric(vertical: 50.0,horizontal: 10.0), // give margin  for horizontal and vertical postions
                   //margin: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 10.0) // give the indivigula vlues for each sides.
-                 margin: EdgeInsets.only(left:20.0), // only give one side
+                 // margin: EdgeInsets.only(left:20.0), // only give one side
                  padding: EdgeInsets.all(20.0),
                ),
-                 SizedBox(height: 20.0,),
+                SizedBox(
+                 width: 10.0,
+                ),
                Container(
                  color: Colors.red,
                  child: Text('Hello'),
                  height: 100.0,
                  // width: double.infinity,
-                 margin: EdgeInsets.only(left:20.0),
+                 // margin: EdgeInsets.only(left:20.0),
                  padding: EdgeInsets.all(20.0),
                ),
-               SizedBox(height: 20.0,),
+               SizedBox(
+                 width: 10.0,
+               ),
                Container(
                  color: Colors.yellow,
                  child: Text('Hello'),
                  height: 100.0,
                  // width: double.infinity,
-                 margin: EdgeInsets.only(left:20.0),
+                 // margin: EdgeInsets.only(left:20.0),
                  padding: EdgeInsets.all(20.0),
                ),
                // Container(     // this is the one way to strach to cross side (virudda side ekata)
