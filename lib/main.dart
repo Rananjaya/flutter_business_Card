@@ -22,6 +22,13 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.red,
               backgroundImage: AssetImage('images/me.jpg'),
             ),
+            Text(
+              "Rananjaya",
+              style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
           ],
         )),
       ),
