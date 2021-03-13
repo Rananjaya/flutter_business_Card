@@ -64,10 +64,13 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
+                // this card widget has not padding property so we need to wrap with padding widget
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 // padding: EdgeInsets.all(15.0),
                 child: Padding(
+                  // this is the padding widget warp with padding widget
+                  //This is the padding widget
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
                     children: [
