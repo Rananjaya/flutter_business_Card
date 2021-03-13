@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -39,53 +40,42 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(
                 height: 30.0,
+                width: 150.0,
+                child: Divider(color: Colors.teal[50]),
               ),
               Card(
-                color: Colors.white,
+                //color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 // padding: EdgeInsets.all(15.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    children: [
-                      Icon(Icons.phone_android, color: Colors.teal),
-                      SizedBox(
-                        width: 60.0,
-                      ),
-                      Text(
-                        '+94767219034',
-                        style: TextStyle(
-                            color: Colors.teal,
-                            fontFamily: 'SourceSansPro',
-                            fontSize: 20.0),
-                      ),
-                    ],
+
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal),
+                  title: Text(
+                    '+94767219034',
+                    style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0),
                   ),
                 ),
               ),
               Card(
                 // this card widget has not padding property so we need to wrap with padding widget
-                color: Colors.white,
+                //color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 // padding: EdgeInsets.all(15.0),
-                child: Padding(
-                  // this is the padding widget warp with padding widget
-                  //This is the padding widget
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    children: [
-                      Icon(Icons.email, color: Colors.teal),
-                      SizedBox(
-                        width: 30.0,
-                      ),
-                      Text(
-                        'rananjayabandara@gmail.com',
-                        style: TextStyle(
-                            color: Colors.teal,
-                            fontFamily: 'SourceSansPro',
-                            fontSize: 20.0),
-                      ),
-                    ],
+
+                // this is the padding widget warp with padding widget
+                //This is the padding widget
+
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal),
+                  title: Text(
+                    'rananjayabandara@gmail.com',
+                    style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0),
                   ),
                 ),
               ),
